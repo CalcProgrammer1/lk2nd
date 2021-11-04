@@ -6,11 +6,12 @@
 
 / {
 	// This is used by the bootloader to find the correct DTB
-	qcom,msm-id = <0x7E01FF01 8 0>;
+	qcom,msm-id = <0x7E01FF01 7 0>,
+			<0xB801FF01 7 0>,
+			<0xB901FF01 7 0>;
 
 	hlte {
 		model = "Samsung Galaxy Note 3 (SM-N900T)";
 		compatible = "samsung,hlte", "qcom,msm8974", "lk2nd,device";
-		lk2nd,match-cmdline = "* samsung.hardware=SM-N900T *";
 	};
 };
