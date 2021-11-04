@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+#include <skeleton.dtsi>
+
+/ {
+	// This is used by the bootloader to find the correct DTB
+	qcom,msm-id = <0x7E01FF01 8 0>;
+
+	hlte {
+		model = "Samsung Galaxy Note 3 (SM-N900T)";
+		compatible = "samsung,hlte", "qcom,msm8974", "lk2nd,device";
+		lk2nd,match-cmdline = "* samsung.hardware=SM-N900T *";
+	};
+};
